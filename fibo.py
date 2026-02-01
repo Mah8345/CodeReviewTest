@@ -1,11 +1,9 @@
 def fib(n):
-    a = []
-    for i in range(n):
-        a.append(1)
+    fibo_nums = [1 for x in range(n)]
 
     for i in range(n - 2):
-        a[i+2] = a[i] + a[i+1]
-    return a[n-1]
+        fibo_nums[i+2] = fibo_nums[i] + fibo_nums[i+1]
+    return fibo_nums[n-1]
 
 
 n = 5
